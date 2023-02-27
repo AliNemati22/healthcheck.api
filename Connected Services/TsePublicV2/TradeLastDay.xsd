@@ -1,0 +1,34 @@
+﻿<xs:schema id = "TradeLastDay" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+ 
+     <xs:element name = "TradeLastDay" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    
+          <xs:complexType>
+    
+            <xs:choice minOccurs = "0" maxOccurs="unbounded">
+          <xs:element name = "TradeLastDay">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name = "LVal18AFC" type="xs:string" minOccurs="0" />
+                <xs:element name = "DEven" type="xs:int" minOccurs="0" />
+                <xs:element name = "ZTotTran" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "QTotTran5J" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "QTotCap" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "InsCode" type="xs:long" minOccurs="0" />
+                <xs:element name = "LVal30" type="xs:string" minOccurs="0" />
+                <xs:element name = "PClosing" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "PDrCotVal" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "PriceChange" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "PriceMin" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "PriceMax" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "PriceFirst" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "PriceYesterday" type="xs:decimal" minOccurs="0" />
+                <xs:element name = "Last" type="xs:unsignedByte" minOccurs="0" />
+               <xs:element name = "HEven" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>

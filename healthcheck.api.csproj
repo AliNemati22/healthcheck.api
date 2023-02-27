@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d0102bd8-080d-42e0-b107-b5237776c657</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Entities\**" />
+    <Compile Remove="Infrastructure\**" />
+    <Content Remove="Domain\Entities\**" />
+    <Content Remove="Infrastructure\**" />
+    <EmbeddedResource Remove="Domain\Entities\**" />
+    <EmbeddedResource Remove="Infrastructure\**" />
+    <None Remove="Domain\Entities\**" />
+    <None Remove="Infrastructure\**" />
+    <Compile Remove="Domain\Enums\WebServiceEnum.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Settings\RedisDbOptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Connected Services\TsePublicV2\TradeLastDay.xsd" />
+    <None Remove="D:\Users\a.nemati\.nuget\packages\ravendb.client\5.3.1\contentFiles\any\any\libzstd.arm.32.so" />
+    <None Remove="D:\Users\a.nemati\.nuget\packages\ravendb.client\5.3.1\contentFiles\any\any\libzstd.arm.64.so" />
+    <None Remove="D:\Users\a.nemati\.nuget\packages\ravendb.client\5.3.1\contentFiles\any\any\libzstd.linux.x64.so" />
+    <None Remove="D:\Users\a.nemati\.nuget\packages\ravendb.client\5.3.1\contentFiles\any\any\libzstd.mac.x64.dylib" />
+    <None Remove="D:\Users\a.nemati\.nuget\packages\ravendb.client\5.3.1\contentFiles\any\any\libzstd.win.x64.dll" />
+    <None Remove="D:\Users\a.nemati\.nuget\packages\ravendb.client\5.3.1\contentFiles\any\any\libzstd.win.x86.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.8.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\api.common\api.common.csproj" />
+    <ProjectReference Include="..\domain\domain.csproj" />
+    <ProjectReference Include="..\infrastructure\infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Domain\Enums" />
+  </ItemGroup>
+
+</Project>
